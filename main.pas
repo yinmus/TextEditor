@@ -61,6 +61,8 @@ begin
   end;
 end;
 
+// Сохранить как
+
 procedure TForm1.miSaveAsClick(Sender: TObject);
 begin
   if SaveDialog1.Execute then
