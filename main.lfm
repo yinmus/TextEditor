@@ -1,0 +1,57 @@
+object Form1: TForm1
+  Left = 1331
+  Height = 890
+  Top = 216
+  Width = 1372
+  Caption = 'Form1'
+  ClientHeight = 890
+  ClientWidth = 1372
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '3.8.0.0'
+  object Memo1: TMemo
+    Left = 0
+    Height = 890
+    Top = 0
+    Width = 1372
+    Align = alClient
+    Color = clBlack
+    Font.Color = clWhite
+    Font.Height = 17
+    Lines.Strings = (
+      'Memo1'
+    )
+    ParentFont = False
+    TabOrder = 0
+    OnChange = Memo1Change
+  end
+  object MainMenu1: TMainMenu
+    Left = 48
+    object miOpen: TMenuItem
+      Caption = 'Open'
+      OnClick = miOpenClick
+    end
+    object miSave: TMenuItem
+      Caption = 'Save'
+      OnClick = miSaveClick
+    end
+    object miSaveAs: TMenuItem
+      Caption = 'Save As'
+      OnClick = miSaveAsClick
+    end
+    object miExit: TMenuItem
+      Caption = 'Exit'
+      OnClick = miExitClick
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    FileName = '/home/thm'
+    InitialDir = '/home/'
+    Left = 23
+    Top = 838
+  end
+  object SaveDialog1: TSaveDialog
+    Left = 122
+    Top = 848
+  end
+end
