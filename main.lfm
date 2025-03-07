@@ -45,7 +45,7 @@ object Form1: TForm1
     end
   end
   object OpenDialog1: TOpenDialog
-    FileName = '/home/thm'
+    FileName = '/home/'
     InitialDir = '/home/'
     Left = 23
     Top = 838
